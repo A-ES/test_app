@@ -18,10 +18,9 @@ export default function App() {
     }
   };
 
-  // BUG 3: Setting to undefined instead of empty array causes a crash on render
-  const handleClearTodos = () => {
+  // BUG 3: Setting to undefined instead of empty array causes a crash on render  const handleClearTodos = () => {
     setTodos([]); 
-  };
+  };};
 
   return (
     <div className="App" style={{ padding: '20px', fontFamily: 'sans-serif' }}>
