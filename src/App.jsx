@@ -8,7 +8,7 @@ export default function App() {
 
   // BUG 1: Counter increments by 2 instead of 1
   const handleIncrement = () => {
-    setCount(count + 1); 
+    setCount(prevCount => prevCount + 1); 
   };
 
   const handleAddTodo = () => {
