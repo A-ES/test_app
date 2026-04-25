@@ -20,7 +20,7 @@ export default function App() {
 
   // BUG 3: Setting to undefined instead of empty array causes a crash on render
   const handleClearTodos = () => {
-    setTodos([]); // Update todos to an empty array without setting it to undefined
+    setTodos([]); 
   };
 
   return (
@@ -56,7 +56,7 @@ export default function App() {
 
         <ul>
           {/* If todos is undefined (due to Bug 3), this will throw a TypeError */}
-          {todos.map((todo, index) => (
+          {todos && todos.map((todo, index) => (
             <li key={index}>{todo}</li>
           ))}
         </ul>
