@@ -20,7 +20,7 @@ export default function App() {
 
   // BUG 3: Setting to undefined instead of empty array causes a crash on render
   const handleClearTodos = () => {
-    setTodos(todos || []); 
+    setTodos([]); // Update todos to an empty array without setting it to undefined
   };
 
   return (
