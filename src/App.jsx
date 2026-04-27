@@ -56,7 +56,7 @@ export default function App() {
 
         <ul>
           {/* If todos is undefined (due to Bug 3), this will throw a TypeError */}
-          {todos.map((todo, index) => (
+          {todos && todos.map((todo, index) => (
             <li key={index}>{todo}</li>
           ))}
         </ul>
