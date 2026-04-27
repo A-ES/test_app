@@ -7,9 +7,7 @@ export default function App() {
   const [inputValue, setInputValue] = useState('');
 
   // BUG 1: Counter increments by 2 instead of 1
-  const handleIncrement = () => {
-    setCount(count + 1); 
-  };
+  const handleIncrement = () => { count += 1; };;
 
   const handleAddTodo = () => {
     if (inputValue.trim() !== '') {
